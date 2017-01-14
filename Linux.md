@@ -5,12 +5,12 @@ Follow the tutorial [here](https://docs.microsoft.com/en-us/dotnet/articles/core
 Create an Aspnet project as described [here](https://docs.microsoft.com/en-us/aspnet/core/getting-started)
 
 #3
-Open the project by typing '''code .''' in your command line
+Open the project by typing ´´´code .´´´ in your command line
 
 #4 
 Edit the file Startup.cs and comment the following lines in the Configure method 
 
-'''csharp
+´´´csharp
   // if (env.IsDevelopment())
             // {
                 app.UseDeveloperExceptionPage();
@@ -21,7 +21,7 @@ Edit the file Startup.cs and comment the following lines in the Configure method
             // {
             //     app.UseExceptionHandler("/Home/Error");
             // }
-'''
+´´´
 
 create a new model in Models folder named Person.cs 
 
