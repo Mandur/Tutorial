@@ -11,7 +11,7 @@ https://github.com/Microsoft-Web/WebCampTrainingKit/tree/master/HOL/AspNetApiSpa
 
 # Linux
 
-Web - Intermediaire - MVC Tutoriel pour créer un projet MVC sous linux & aspnetscore. [ici](linux.md)
+Web - Intermediaire - MVC Tutoriel pour créer un projet MVC sous linux & aspnetscore. [ici](Linux.md)
 
 # Mac
 
