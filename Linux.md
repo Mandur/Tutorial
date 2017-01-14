@@ -10,7 +10,7 @@ Open the project by typing ```code .``` in your command line
 #4 
 Edit the file Startup.cs and comment the following lines in the Configure method 
 
-```csharp
+```cs
   // if (env.IsDevelopment())
             // {
                 app.UseDeveloperExceptionPage();
