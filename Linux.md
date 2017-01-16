@@ -4,20 +4,20 @@ Follow the tutorial [here](https://docs.microsoft.com/en-us/dotnet/articles/core
 #2
 Create an Aspnet project as described [here](https://docs.microsoft.com/en-us/aspnet/core/getting-started)
 
-#2'
-Install VSCOde
+#2'(Optional)
+Install (VSCode)[https://code.visualstudio.com/] as a code editor on Linux
 
 #3
 Open the project by typing ```code .``` in your command line
 
 #4 
-Edit the file Startup.cs and comment the following lines in the Configure method 
+Edit the file Startup.cs and comment the following lines in the Configure method (this will allow error message to display on the browser even locally)
 
 ```cs
   // if (env.IsDevelopment())
             // {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
+                 app.UseDatabaseErrorPage();
                 app.UseBrowserLink();
             // }
             // else
@@ -27,7 +27,7 @@ Edit the file Startup.cs and comment the following lines in the Configure method
 ```
 
 #5
-create a new model in the Models folder named ```Person.cs```. (In VSCode, right click on the folder and create a new file)
+create a new model in the Models folder named ```Person.cs```. (In VSCode, right click on the folder and create a new file). We would like to generate a CRUD like system to manage these persons now.
 
 ```cs
 namespace WebApplication.Models
@@ -45,7 +45,7 @@ namespace WebApplication.Models
 ```
 
 #6
-Update the file project.json to the latest version by replacing its content by the following
+Update the file project.json to the latest version by replacing its content by the following: (This is an update to the package to ensure they work with the latest version)
 ```json
 {
   "userSecretsId": "aspnet-WebApplication-0799fe3e-6eaf-4c5f-b40e-7c6bfd5dfa9a",
@@ -163,7 +163,7 @@ Update the file project.json to the latest version by replacing its content by t
 
 ```
 #7 
-Go back to the command line and write the line 
+Go back to the command line and write the line. This will update the package you described in the package.json file.
 ```
 dotnet restore
 ```
@@ -188,11 +188,10 @@ In order to add the Person class to the database please write the following comm
 ```
 dotnet ef migrations add
 dotnet ef database update
-Create a linux web app
 ```
 
+#11 Run the Website.
 
-
-https://docs.microsoft.com/en-us/azure/app-service-web/app-service-deploy-local-git
-
+#12 Optional
+Build a dockerfile, publish it to the dockerhub and publish it to the Web app for Linux on Azure.
 
