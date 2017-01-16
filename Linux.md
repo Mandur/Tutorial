@@ -196,5 +196,6 @@ Run the Website.
 
 #12 Optional
 Build a dockerfile, (https://stormpath.com/blog/tutorial-deploy-asp-net-core-on-linux-with-docker)
-publish it to the dockerhub(https://docs.docker.com/engine/tutorials/dockerrepos/) and publish it to the Web app for Linux on Azure.
+publish it to the dockerhub(https://docs.docker.com/engine/tutorials/dockerrepos/) 
+publish it to the Web app for Linux on Azure (https://docs.microsoft.com/en-us/azure/app-service-web/app-service-linux-using-custom-docker-image)
 
