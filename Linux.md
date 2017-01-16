@@ -142,6 +142,7 @@ Update the file project.json to the latest version by replacing its content by t
     }
   },
 
+
   "publishOptions": {
     "include": [
       "wwwroot",
@@ -190,8 +191,10 @@ dotnet ef migrations add
 dotnet ef database update
 ```
 
-#11 Run the Website.
+#11 
+Run the Website.
 
 #12 Optional
-Build a dockerfile, publish it to the dockerhub and publish it to the Web app for Linux on Azure.
+Build a dockerfile, (https://stormpath.com/blog/tutorial-deploy-asp-net-core-on-linux-with-docker)
+publish it to the dockerhub(https://docs.docker.com/engine/tutorials/dockerrepos/) and publish it to the Web app for Linux on Azure.
 
